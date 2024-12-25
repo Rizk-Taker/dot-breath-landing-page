@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dot Breath</title>
+    <title>Dot Breath - Mindful Breathing with Your Audio</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Dot Breath - Mindful Breathing with Your Audio">
+    <meta name="description" content="Transform any song or podcast into a breathing session with gentle, non-intrusive guidance that overlays perfectly on your audio.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dotbreath.app/">
+    <meta property="og:title" content="Dot Breath - Mindful Breathing with Your Audio">
+    <meta property="og:description" content="Transform any song or podcast into a breathing session with gentle, non-intrusive guidance that overlays perfectly on your audio.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dotbreath.app/">
+    <meta property="twitter:title" content="Dot Breath - Mindful Breathing with Your Audio">
+    <meta property="twitter:description" content="Transform any song or podcast into a breathing session with gentle, non-intrusive guidance that overlays perfectly on your audio.">
+    
     <style>
+        /* Previous styles remain the same until .app-store */
         /* Using system font stack for monospace feel */
         body {
             margin: 0;
@@ -84,19 +102,54 @@
             margin: 0 auto 48px;
         }
 
-        .app-store {
-            display: block;
+        /* Email Signup Form */
+        .signup-form {
+            max-width: 400px;
             margin: 0 auto 64px;
-            opacity: 0.9;
-            transition: opacity 0.2s;
         }
 
-        .app-store:hover {
-            opacity: 1;
+        .signup-form p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 16px;
         }
 
-        .app-store img {
-            height: 40px;
+        .email-input-group {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .email-input-group input {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 16px;
+            border-radius: 4px;
+            color: white;
+            font-family: inherit;
+            font-size: 16px;
+        }
+
+        .email-input-group input:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .email-input-group button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 12px 24px;
+            border-radius: 4px;
+            color: white;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .email-input-group button:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
         }
 
         /* Features */
@@ -145,6 +198,16 @@
             color: rgba(255, 255, 255, 0.4);
             font-size: 14px;
         }
+
+        @media (max-width: 480px) {
+            .email-input-group {
+                flex-direction: column;
+            }
+            
+            .email-input-group button {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -170,9 +233,11 @@
             just add the rhythm of breath.
         </p>
 
-        <a href="#" class="app-store">
-            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store">
-        </a>
+        <div class="signup-form" style="max-width: 400px; margin: 0 auto 64px;">
+            <p style="font-size: 14px; color: rgba(255, 255, 255, 0.6); margin-bottom: 16px;">Join the waitlist to be notified when we launch</p>
+            <iframe data-tally-src="https://tally.so/embed/mO86DR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="120" frameborder="0" marginheight="0" marginwidth="0" title="Dot Breath"></iframe>
+            <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        </div>
 
         <h2 class="features-title">Features</h2>
         
